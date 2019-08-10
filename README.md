@@ -1,31 +1,17 @@
-Agollo_Demo - Demo For Apollo
+agollo-agent - Apollo in Service Mesh
 ================
 
-[Apollo](https://github.com/zouyx/agollo)的使用Demo
+[Apollo](https://github.com/ctripcorp/apollo)的Service Mesh实现
 
-主要用于验证Agollo客户端自动刷新功能
+# Dependence
 
-Dependence
-------------
-
-## 使用go get方式
-
-```
-go get -u github.com/cihub/seelog
-go get -u github.com/zouyx/agollo
-```
-
-## 使用gopm方式(推荐)
-
-```
-gopm get github.com/cihub/seelog -v -g
-gopm get github.com/zouyx/agollo -v -g
+```bash
+./import.sh
 ```
 
 推荐[gopm](https://github.com/gpmgo/gopm)，不需要翻墙
 
-Installation
-------------
+# Installation
 
 如果还没有安装Go开发环境，请参考以下文档[Getting Started](http://golang.org/doc/install.html) ，安装完成后，请执行以下命令：
 
@@ -42,8 +28,8 @@ Installation
 
 *请注意*: 最好使用Go 1.8进行编译
 
-Run
-------------
+# Run
+
 完成编译后
 
 - 进入build文件夹，配置app.properties（参考：[使用配置](https://github.com/zouyx/agollo/wiki/使用指南)）
@@ -51,18 +37,13 @@ Run
   - Mac/Linux : ./agollo-demo
   - Windows : agollo-demo.exe
   
+# Contribution
+  * Source Code: https://github.com/zouyx/agollo/
+  * Issue Tracker: https://github.com/zouyx/agollo/issues
 
-Validate
-------------
+# License
+The project is licensed under the [Apache 2 license](https://github.com/zouyx/agollo/blob/master/LICENSE).
 
-- 验证所有字段
+# Reference
+Apollo : https://github.com/ctripcorp/apollo
 
-```
-http://localhost:9000/check
-```
-
-- 验证某个字段
-
-```
-http://localhost:9000/check?key=apolloKey
-```
