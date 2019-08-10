@@ -2,10 +2,10 @@ agollo-agent - Apollo in Service Mesh
 ================
 
 [![golang](https://img.shields.io/badge/Language-Go-green.svg?style=flat)](https://golang.org)
-[![Build Status](https://travis-ci.org/zouyx/agollo.svg?branch=master)](https://travis-ci.org/zouyx/agollo)
+[![Build Status](https://travis-ci.org/zouyx/agollo-agent.svg?branch=master)](https://travis-ci.org/zouyx/agollo-agent)
 [![Go Report Card](https://goreportcard.com/badge/github.com/zouyx/agollo-agent)](https://goreportcard.com/report/github.com/zouyx/agollo-agent)
 [![codebeat badge](https://codebeat.co/badges/bc2009d6-84f1-4f11-803e-fc571a12a1c0)](https://codebeat.co/projects/github-com-zouyx-agollo-master)
-[![Coverage Status](https://coveralls.io/repos/github/zouyx/agollo/badge.svg?branch=master)](https://coveralls.io/github/zouyx/agollo?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/zouyx/agollo-agent/badge.svg?branch=master)](https://coveralls.io/github/zouyx/agollo-agent?branch=master)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![GoDoc](http://godoc.org/github.com/zouyx/agollo-agent?status.svg)](http://godoc.org/github.com/zouyx/agollo-agent)
 [![GitHub release](https://img.shields.io/github/release/zouyx/agollo-agent.svg)](https://github.com/zouyx/agollo-agent/releases)
