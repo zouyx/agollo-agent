@@ -44,15 +44,15 @@ agollo-agent - Apollo in Service Mesh
 
 - 进入build文件夹，配置app.properties（参考：[使用配置](https://github.com/zouyx/agollo/wiki/使用指南)）
 - 执行
-  - Mac/Linux : ./agollo-demo
-  - Windows : agollo-demo.exe
+  - Mac/Linux : ./agollo-agent
+  - Windows : agollo-agent.exe
   
 # Contribution
-  * Source Code: https://github.com/zouyx/agollo/
-  * Issue Tracker: https://github.com/zouyx/agollo/issues
+  * Source Code: https://github.com/zouyx/agollo-agent/
+  * Issue Tracker: https://github.com/zouyx/agollo-agent/issues
 
 # License
-The project is licensed under the [Apache 2 license](https://github.com/zouyx/agollo/blob/master/LICENSE).
+The project is licensed under the [Apache 2 license](https://github.com/zouyx/agollo-agent/blob/master/LICENSE).
 
 # Reference
 Apollo : https://github.com/ctripcorp/apollo
