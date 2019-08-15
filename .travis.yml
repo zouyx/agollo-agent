@@ -35,5 +35,5 @@ jobs:
     go: 1.9
     script:
     - echo "Deploying to GitHub releases ..."
-    - chmod u+x build.sh
-    - ./build.sh
+    - chmod u+x make.sh
+    - ./make.sh
