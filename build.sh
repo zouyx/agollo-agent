@@ -13,4 +13,4 @@ go get github.com/zouyx/agollo
 echo "编译中.."
 cd $srcBaseDir
 rm -rf build
-go build -o "$projectName" main/check.go
+go build -o "$projectName" main/main.go
