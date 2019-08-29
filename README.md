@@ -40,12 +40,17 @@ agollo-agent - Apollo in Service Mesh
 
 # Run
 
-完成编译后
+[下载地址](https://github.com/zouyx/agollo-agent/releases)
 
-- 进入build文件夹，配置app.properties（参考：[使用配置](https://github.com/zouyx/agollo/wiki/使用指南)）
+- 配置app.properties（参考：[使用配置](https://github.com/zouyx/agollo/wiki/使用指南)）
 - 执行
-  - Mac/Linux : ./agollo-agent
-  - Windows : agollo-agent.exe
+  - Mac/Linux  
+  
+  ```./agollo-agent```
+  
+  - Windows
+  
+  ```agollo-agent.exe```
   
 # Contribution
   * Source Code: https://github.com/zouyx/agollo-agent/
