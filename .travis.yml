@@ -2,26 +2,21 @@ language: go
 sudo: required
 os:
 - linux
-
 go:
 - 1.9
-- "1.10"
+- '1.10'
 - 1.11
-
 env:
 - GO15VENDOREXPERIMENT="1"
 before_install:
 - go get github.com/mattn/goveralls
-
 stages:
 - Test
 - Build
 - Github Release
-
 script:
 - chmod u+x coverage.sh
 - "./coverage.sh --coveralls"
-
 jobs:
   include:
   - stage: Build
@@ -30,20 +25,20 @@ jobs:
     script:
     - echo "Build apps ..."
     - chmod u+x build.sh
-    - ./build.sh
+    - "./build.sh"
   - stage: Github Release
     if: tag =~ ^v
     go: 1.9
     script:
     - echo "Deploying to GitHub releases ..."
     - chmod u+x make.sh
-    - ./make.sh
-    deploy:
-      provider: releases
-      file_glob: true
-      file: dist/*
-      api_key:
-        secure: PyyuRrm9ks8km0lD5ijjIks6Jn4a1r3XqtxyO4BtLoz5IvQWpBppcq+s09q/oH5UA/wVzCCOd9Nmom1goMGQJP4wmq5LB1VQK4vdL84tF4hX+gVi7fgwjYUILXNXF1QO6h+XmfJo0pHAOIDNN5/fqyKrwF6L7GsR5UvvfWKt3sYOK45U38qyZvuqp9d8DfCiC1GHm937umA/CmRB8126CSoknp1kMDRdOwzX2BNTCAv84ilo/Ich+E9tmtok7QwWxgIeilVJlh9YbLpENVFATtWKsz4wHO/EEMqaNHcVZeknFKwBeVdZLeq+B3dG3Lccpf/HS8UcCeO67aBfsAEn/VQjPUg4fIAXUHitpXwR7s+zJS/knPbBq6sma+MmJ5H24U6r8MehXkiRK1j8mwOrxsV3oXuJTiKheHlF6s1cYKgxj9sMXDsZalcZ773WQ37vSXRSdan2uvQeOpgO/YigDFedU56ONBjUAWo+e4jkiEfnv1yx8AzLblvYr77+izZAv395u/pCliQotevsYIMNs253cnlA/MDFvzznhjAJ9cVhzn8CwWq/cnXnuU/mNpN/7cpytsoGVQ7cddWPNNtik/XxaSQng5Bhtdtsq2hI1eSIRCmpeNHtNgMUvNqMVRAtlnI1f1Mo/X6jN3XcMUOQTG2a2AxTQOM2YvaMq0K0rt4=
-      skip_cleanup: true
-      on:
-        tags: true
+    - "./make.sh"
+deploy:
+  provider: releases
+  file_glob: true
+  api_key:
+    secure: HWFbf7umJegE2v3IDlzgiM4eNYrPyh2fLVijoAWsUMeZfBxuYMVbR1tSsLyWP/cYkOk8EXxTet3vbKAmyqGcYccpumKEebUttXOhNZjMqhN86VJucyQ1GEOD93JJZErO5Hj/B573hGhxWzrBOgthF5jUpB/S97uwLbgl6kNjNBNXC7/Dgxl0cyH8AdMce553WmGzmXIOQDN8sBuWJ5odSj3qpEjl8vTR9m0PpmQU9iyY5dtffliFfbTBZ10pP6TbR1n253fh6xmi7aGAV75pzfjbeTYUIb4zEqxFFqmjdYEPRjESR1iHc5VKGJYl8yL7vCUo1GZiilvgcah7Gf6/rCYIOXyGrfaLNQMb+sxhtU8eXNho2iZR34NVC9527spcYsKpsfYGFV4FXr1sqnnzmRBuVi3znJ1/8xPudMpnDQgVtYkoZgASmAhgWY+XOqUG/u6iGDTKLvtctclJOj5XT94V5i5lZdbuyjG7yDE/cmnxvLqb88MtLpL9SGFc39oJE/GZfnQQuA2xG+QN2BmR2GUSKWALov2IS3NpGArJsE/Hoh78FI6smicjQkZ3wTzsvxO4Hg8vYsHfsQaD5Za0l4Bs01eQzrOigCd2D7yRBHeFU6NMGDoAtA9YHUKfp+VzN3O4W02EtuHgnWhnO3n27bD7R+yWszjPzHR65ZZ+4kY=
+  file: dist/*
+  skip_cleanup: true
+  on:
+    repo: zouyx/agollo-agent
