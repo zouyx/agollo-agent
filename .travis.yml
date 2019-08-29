@@ -41,4 +41,4 @@ jobs:
         secure: HWFbf7umJegE2v3IDlzgiM4eNYrPyh2fLVijoAWsUMeZfBxuYMVbR1tSsLyWP/cYkOk8EXxTet3vbKAmyqGcYccpumKEebUttXOhNZjMqhN86VJucyQ1GEOD93JJZErO5Hj/B573hGhxWzrBOgthF5jUpB/S97uwLbgl6kNjNBNXC7/Dgxl0cyH8AdMce553WmGzmXIOQDN8sBuWJ5odSj3qpEjl8vTR9m0PpmQU9iyY5dtffliFfbTBZ10pP6TbR1n253fh6xmi7aGAV75pzfjbeTYUIb4zEqxFFqmjdYEPRjESR1iHc5VKGJYl8yL7vCUo1GZiilvgcah7Gf6/rCYIOXyGrfaLNQMb+sxhtU8eXNho2iZR34NVC9527spcYsKpsfYGFV4FXr1sqnnzmRBuVi3znJ1/8xPudMpnDQgVtYkoZgASmAhgWY+XOqUG/u6iGDTKLvtctclJOj5XT94V5i5lZdbuyjG7yDE/cmnxvLqb88MtLpL9SGFc39oJE/GZfnQQuA2xG+QN2BmR2GUSKWALov2IS3NpGArJsE/Hoh78FI6smicjQkZ3wTzsvxO4Hg8vYsHfsQaD5Za0l4Bs01eQzrOigCd2D7yRBHeFU6NMGDoAtA9YHUKfp+VzN3O4W02EtuHgnWhnO3n27bD7R+yWszjPzHR65ZZ+4kY=
       skip_cleanup: true
       on:
-        repo: zouyx/agollo-agent
+        tags: true
